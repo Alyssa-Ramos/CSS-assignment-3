@@ -2,10 +2,11 @@
   box-sizing: border-box;
 }
 
+
 body {
   background: #b3dbe8;
   color: #000;
-  font-family: sans-serif; /*   add fonts   */
+  font-family: "Didact Gothic", Verdana,"Arial", sans-serif; /*   add fonts   */
 }
 
 
@@ -47,7 +48,7 @@ aside {
 
 h1, h2 {
   margin: 0;
-  font-family: serif; /*   add fonts   */
+  font-family: "Cantata One",Georgia,"Times New Roman", serif; /*   add fonts   REMINDER THAT COMMAs COME AFTER QUOTES*/
 }
 
 article h1 {
@@ -107,11 +108,33 @@ aside a:hover {
   background: #fafa7f;
 }
 
-/* special classes */
-
 .clearfix {
   clear: both;
 }
 
+/* special classes */
 
 /* put your media queries below */
+
+@media (max-width: 480px) {
+
+    article {
+       width: 100%;
+       margin: 0;
+     }
+
+     aside {
+       clear: both;
+       width: 100%;
+       margin: 0;}
+
+       #sidebar2 {
+         width: 100%;
+         margin: 0;}
+
+         #top-image-container {
+           display: none;}
+
+           #container {
+             margin: 0;}
+ }
